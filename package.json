@@ -1,0 +1,40 @@
+{
+    "name": "yungblud-calculator",
+    "version": "1.0.5",
+    "description": "simple calculator app",
+    "main": "dist/index.js",
+    "author": "yungblud",
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/yungblud/yungblud-calculator"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.8.4",
+        "@babel/plugin-transform-modules-commonjs": "^7.8.3",
+        "@babel/preset-env": "^7.8.4",
+        "eslint": "^6.8.0"
+    },
+    "scripts": {
+        "start": "node ./dist/index.js",
+        "build": "babel src -d dist",
+        "build:watch": "babel src -w -d dist"
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env"
+            ]
+        ],
+        "plugins": [
+            [
+                "@babel/plugin-transform-modules-commonjs",
+                {
+                    "loose": false,
+                    "strict": true,
+                    "noInterop": true
+                }
+            ]
+        ]
+    }
+}
