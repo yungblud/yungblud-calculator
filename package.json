@@ -1,6 +1,6 @@
 {
     "name": "yungblud-calculator",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "simple calculator app",
     "main": "dist/index.js",
     "author": "yungblud",
